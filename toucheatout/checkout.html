@@ -1,14 +1,15 @@
 <!DOCTYPE html >
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css" />
+        <script src="js.js"></script>
 	<style>
 	img {
   border: 1px solid #555;
 }
-	</style>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
+
 body {
   font-family: Arial;
   font-size: 17px;
@@ -117,7 +118,7 @@ span.price {
 <body>
 	
 <h2><p align="center"><u>Your Cart</u></p></h2>
-<p align="center"><img src="newtoucheatoutlogo.png" width="250"></p>
+<p align="center"><img src="logotransparent.png" width="250"></p>
 <p align="center">Make Sure To Double Check Your Orders Before Making Your Payment!</p>
 <div class="row">
   <div class="col-75">
@@ -126,15 +127,66 @@ span.price {
       
         <div class="row">
           <div class="col-50">
-            <h3>Your Products</h3>
-            
-            <p><b>Strawberry Shortcake x1</b></p>
-            <img src="Strawberrycheesecake.png" width="250">
-            <p> <b>Strawberry Cake x1</b></p>
-           <img src="strobericake.png" width="250">
-		<p><b>Classic Cheesecake x1</b></p>
-		<img src="cheesecake.png" width="250"> 
-
+            <section class="container content-section">
+              <h2 class="section-header">Cakes!</h2>
+              <div class="shop-items">
+                  <div class="shop-item">
+                      
+                      <img class="shop-item-image" src="chees1.png"><br>
+                      <span class="shop-item-title">Chiscake1</span>
+                      <div class="shop-item-details">
+                          <span class="shop-item-price">$12.99</span>
+                          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                      </div>
+                  </div>
+                  <div class="shop-item">
+                      <span class="shop-item-title">Chiscake2</span>
+                      <img class="shop-item-image" src="cbees2.png">
+                      <div class="shop-item-details">
+                          <span class="shop-item-price">$14.99</span>
+                          <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                      </div>
+                  </div>
+                  <div class="shop-item">
+                      <span class="shop-item-title">Chiscake3</span>
+                      <img class="shop-item-image" src="chees3.png">
+                      <div class="shop-item-details">
+                          <span class="shop-item-price">$9.99</span>
+                          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                      </div>
+                  </div>
+                  <div class="shop-item">
+                      <span class="shop-item-title">Chiscake4</span>
+                      <img class="shop-item-image" src="chees4.png">
+                      <div class="shop-item-details">
+                          <span class="shop-item-price">$19.99</span>
+                          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <section class="container content-section">
+              <h2 class="section-header">Pudding</h2>
+              <div class="shop-items">
+                  <div class="shop-item">
+                      <span class="shop-item-title">Puddink1</span>
+                      <img class="shop-item-image" src="chees5.png">
+                      <div class="shop-item-details">
+                          <span class="shop-item-price">$19.99</span>
+                          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                      </div>
+                  </div>
+                  <div class="shop-item">
+                      <span class="shop-item-title">Puddink2</span>
+                      <img class="shop-item-image" src="chees6.png">
+                      <div class="shop-item-details">
+                          <span class="shop-item-price">$6.99</span>
+                          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                      </div>
+                  </div>
+              </div>
+          </section>
+        
           </div>
 
           <div class="col-50">
@@ -147,7 +199,7 @@ span.price {
               <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div>
             <label for="cname">Name on Card</label>
-            <input type="text" id="cname" name="cardname" placeholder="Beverly Yen">
+            <input type="text" id="cname" name="cardname" placeholder="Kenny Riady">
             <label for="ccnum">Credit card number</label>
             <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
             <label for="expmonth">Exp Month</label>
@@ -162,21 +214,33 @@ span.price {
           </div>
           
         </div>
+        <br>
+        <br>
         <label>
           <input type="checkbox" checked="checked" name="sameadr"> I Have Confirmed My Orders And I Am Ready To Checkout My Orders
         </label>
-        <input type="submit" value="CHECKOUT!" class="btn">
-      </form>
     </div>
   </div>
   <div class="col-25">
     <div class="container">
-      <h4>Summary <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>3</b></span></h4>
-      <p><a href="#">Strawberry Shortcake</a> <span class="price">$4.99</span></p>
-      <p><a href="#">Strawberry Cake</a> <span class="price">$19.96</span></p>
-      <p><a href="#">Classic Cheesecake</a> <span class="price">$9.98</span></p>
-      <hr>
-      <p>Total <span class="price" style="color:black"><b>$29.94</b></span></p>
+  
+      <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">CHECKOUT</button>
+    </section>
+
+
     </div>
   </div>
 </div>
