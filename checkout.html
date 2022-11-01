@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  <script src="js.js"></script>
+  <style>
+    img {
+      border: 1px solid #555;
+    }
+
+    body {
+      font-family: Arial;
+      font-size: 17px;
+      padding: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+      margin: 0 -16px;
+    }
+
+    .col-25 {
+      -ms-flex: 25%;
+      /* IE10 */
+      flex: 25%;
+    }
+
+    .col-50 {
+      -ms-flex: 50%;
+      /* IE10 */
+      flex: 50%;
+    }
+
+    .col-75 {
+      -ms-flex: 75%;
+      /* IE10 */
+      flex: 75%;
+    }
+
+    .col-25,
+    .col-50,
+    .col-75 {
+      padding: 0 16px;
+    }
+
+    .container {
+      background-color: #f2f2f2;
+      padding: 5px 5px 5px 5px;
+      border: 1px solid lightgrey;
+      border-radius: 3px;
+      width: 500px;
+    }
+
+    input[type=text] {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    label {
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .icon-container {
+      margin-bottom: 20px;
+      padding: 7px 0;
+      font-size: 24px;
+    }
+
+    .btn {
+      background-color: antiquewhite;
+      color: #FFAAAA;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      width: 400px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 17px;
+    }
+
+    .btn:hover {
+      background-color: lavenderblush;
+    }
+
+    a {
+      color: #2196F3;
+    }
+
+    hr {
+      border: 1px solid lightgrey;
+    }
+
+    span.price {
+      float: right;
+      color: grey;
+    }
+
+    @media (max-width: 800px) {
+      .row {
+        flex-direction: column-reverse;
+      }
+
+      .col-25 {
+        margin-bottom: 20px;
+      }
+    }
+
+    .title {
+      font-family: 'Dela Gothic One', cursive;
+      font-size: 40px;
+      background-color: beige;
+    }
+
+    .subh {
+      font-family: 'Gentium Plus', serif;
+      font-size: 20px;
+      background-color: beige;
+    }
+
+    .menu {
+      font-family: 'EB Garamond', serif;
+      font-size: 25px;
+    }
+
+    .price {
+      color: #555;
+      font-family: 'EB Garamond', serif;
+      font-size: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <p class="title" align="center">Your Cart</p>
+  <p align="center"> <a href="index.html"> <img src="logotransparent.png" width="300px" height="300px"></a></p>
+  <p class="subh" align="center">Make Sure To Double Check Your Orders Before Making Your Payment!</p>
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="/action_page.php">
+
+          <div class="row">
+            <div class="col-50">
+              <section class="container content-section">
+                <h2 class="section-header">Cakes!</h2>
+                <div class="shop-items">
+                  <div class="shop-item">
+
+                    <img class="shop-item-image" src="chees1.png" width="300px" height="300px"><br>
+                    <span class="shop-item-title">
+                      <p class="menu">Powdered Sugar Cheese Cake</p>
+                    </span>
+                    <div class="shop-item-details">
+                      <span class="shop-item-price">
+                        <p class="price">$5.00</p>
+                      </span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                  </div>
+                  <div class="shop-item">
+
+                    <img class="shop-item-image" src="chees3.png" width="300px" height="300px">
+                    <span class="shop-item-title">
+                      <p class="menu">Cream-Filled Strawberry Cheesecake
+                    </span>
+                    <div class="shop-item-details">
+                      <span class="shop-item-price">
+                        <p class="price">$5.50</p>
+                      </span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                  </div>
+                  <div class="shop-item">
+
+                    <img class="shop-item-image" src="chees5.png" width="300px" height="300px">
+                    <span class="shop-item-title">
+                      <p class="menu">Strawberry Jam Cheesecake</p>
+                    </span>
+                    <div class="shop-item-details">
+                      <span class="shop-item-price">
+                        <p class="price">$5.10</p>
+                      </span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                  </div>
+                  <div class="shop-item">
+
+                    <img class="shop-item-image" src="chees6.png" width="300px" height="300px">
+                    <span class="shop-item-title">
+                      <p class="menu">Dark Chocolate Cake</p>
+                    </span>
+                    <div class="shop-item-details">
+                      <span class="shop-item-price">
+                        <p class="price">$5.80</p>
+                      </span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                  </div>
+                  <div class="shop-item">
+
+                    <img class="shop-item-image" src="chees7.png" width="300px" height="300px">
+                    <span class="shop-item-title">
+                      <p class="menu">Matcha Powder Cake</p>/span>
+                      <div class="shop-item-details">
+                        <span class="shop-item-price">
+                          <p class="price">$5.70</p>
+                        </span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                      </div>
+                  </div>
+                  <div class="shop-item">
+
+                    <img class="shop-item-image" src="chees8.png" width="300px" height="300px">
+                    <span class="shop-item-title">
+                      <p class="menu">Butterfly Tea Cake</p>
+                    </span>
+                    <div class="shop-item-details">
+                      <span class="shop-item-price">
+                        <p class="price">$6.00</p>
+                      </span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="container content-section">
+                <h2 class="section-header">Puddings</h2>
+                <div class="shop-items">
+                  <div class="shop-item">
+
+                    <img class="shop-item-image" src="custardpudding.jpg" width="300px" height="300px">
+                    <span class="shop-item-title">
+                      <p class="menu">Classical Japanese Pudding</p>
+                    </span>
+                    <div class="shop-item-details">
+                      <span class="shop-item-price">
+                        <p class="price">$5.50</p>
+                      </span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                  </div>
+                  <div class="shop-item">
+
+                    <img class="shop-item-image" src="chocopudding.jpg" width="300px" height="300px">
+                    <span class="shop-item-title">
+                      <p class="menu">Chocolate Raspberry Pudding</p>
+                    </span>
+                    <div class="shop-item-details">
+                      <span class="shop-item-price">
+                        <p class="price">$5.00</p>
+                      </span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                  </div>
+                  <div class="shop-item">
+
+                    <img class="shop-item-image" src="strawberrypudding.JPG" width="300px" height="300px">
+                    <span class="shop-item-title">
+                      <p class="menu">Strawberry Cream Pudding</p>
+                    </span>
+                    <div class="shop-item-details">
+                      <span class="shop-item-price">
+                        <p class="price">$5.00</p>
+                      </span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                  </div>
+                  <div class="shop-item">
+
+                    <img class="shop-item-image" src="blueberrypudding.jpg" width="300px" height="300px">
+                    <span class="shop-item-title">
+                      <p class="menu">Blueberry Pudding</p>
+                    </span>
+                    <div class="shop-item-details">
+                      <span class="shop-item-price">
+                        <p class="price">$5.80</p>
+                      </span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                  </div>
+                  <div class="shop-item">
+
+                    <img class="shop-item-image" src="matchapudding.jpeg" width="300px" height="300px">
+                    <span class="shop-item-title">
+                      <p class="menu">Matcha Pudding</p>
+                    </span>
+                    <div class="shop-item-details">
+                      <span class="shop-item-price">
+                        <p class="price">$5.30</p>
+                      </span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <h2 class="section-header">Cookies</h2>
+              <div class="shop-items">
+                <div class="shop-item">
+
+                  <img class="shop-item-image" src="lotus.jpg" width="300px" height="300px">
+                  <span class="shop-item-title">
+                    <p class="menu">Lotus Biscoff Cookies</p>
+                  </span>
+                  <div class="shop-item-details">
+                    <span class="shop-item-price">
+                      <p class="price">$5.40</p>
+                    </span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+                </div>
+                <div class="shop-item">
+
+                  <img class="shop-item-image" src="creamchis.jpg" width="300px" height="300px">
+                  <span class="shop-item-title">
+                    <p class="menu">Cream Cheese Cookies</p>
+                  </span>
+                  <div class="shop-item-details">
+                    <span class="shop-item-price">
+                      <p class="price">$5.80</p>
+                    </span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+                </div>
+                <div class="shop-item">
+
+                  <img class="shop-item-image" src="whitechoc.jpg" width="300px" height="300px">
+                  <span class="shop-item-title">
+                    <p class="menu">White Chocolate Cookies</p>
+                  </span>
+                  <div class="shop-item-details">
+                    <span class="shop-item-price">
+                      <p class="price">$5.30</p>
+                    </span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+                </div>
+                <div class="shop-item">
+
+                  <img class="shop-item-image" src="matchacookie.jpg" width="300px" height="300px">
+                  <span class="shop-item-title">
+                    <p class="menu">Matcha Cookies</p>
+                  </span>
+                  <div class="shop-item-details">
+                    <span class="shop-item-price">
+                      <p class="price">$5.00</p>
+                    </span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+                </div>
+                <div class="shop-item">
+
+                  <img class="shop-item-image" src="redvelvet.jpg" width="300px" height="300px">
+                  <span class="shop-item-title">
+                    <p class="menu">Red Velvet Cookies</p>
+                  </span>
+                  <div class="shop-item-details">
+                    <span class="shop-item-price">
+                      <p class="price">$5.60</p>
+                    </span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+                </div>
+                <div class="shop-item">
+
+                  <img class="shop-item-image" src="cookmon.jpg" width="300px" height="300px">
+                  <span class="shop-item-title">
+                    <p class="menu">Cookie Monster Cookies</p>
+                  </span>
+                  <div class="shop-item-details">
+                    <span class="shop-item-price">
+                      <p class="price">$5.80</p>
+                    </span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+                </div>
+              </div>
+              </section>
+
+              <h2 class="section-header">Today's Specialty</h2>
+              <div class="shop-items">
+                <div class="shop-item">
+
+                  <img class="shop-item-image" src="domino.jpg" width="300px" height="300px">
+                  <span class="shop-item-title">
+                    <p class="menu">Domino Cookies</p>
+                  </span>
+                  <div class="shop-item-details">
+                    <span class="shop-item-price">
+                      <p class="price">$5.00</p>
+                    </span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+                </div>
+                <div class="shop-item">
+
+                  <img class="shop-item-image" src="3dimg.jpg" width="300px" height="300px">
+                  <span class="shop-item-title">
+                    <p class="menu">Cartoon Custom Birthday Cake</p>
+                  </span>
+                  <div class="shop-item-details">
+                    <span class="shop-item-price">
+                      <p class="price">$5.50</p>
+                    </span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+                </div>
+                <div class="shop-item">
+
+                  <img class="shop-item-image" src="cardcook.jpg" width="300px" height="300px">
+                  <span class="shop-item-title">
+                    <p class="menu">Ace of Cards Cookies</p>
+                  </span>
+                  <div class="shop-item-details">
+                    <span class="shop-item-price">
+                      <p class="price">$6.00</p>
+                    </span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+                </div>
+                <div class="shop-item">
+
+                  <img class="shop-item-image" src="turtle.jpg" width="300px" height="300px">
+                  <span class="shop-item-title">
+                    <p class="menu">Turtle Jellies</p>
+                  </span>
+                  <div class="shop-item-details">
+                    <span class="shop-item-price">
+                      <p class="price">$6.50</p>
+                    </span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+                </div>
+                <div class="shop-item">
+
+                  <img class="shop-item-image" src="animalcros.jpg" width="300px" height="300px">
+                  <span class="shop-item-title">
+                    <p class="menu">Animal Crossing Collaboration</p>
+                  </span>
+                  <div class="shop-item-details">
+                    <span class="shop-item-price">
+                      <p class="price">$5.70</p>
+                    </span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            </section>
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="Kenny Riady">
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="May">
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2022">
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <br>
+          <br>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> I Have Confirmed My Orders And I Am Ready To
+            Checkout My Orders
+          </label>
+      </div>
+    </div>
+    <div class="col-25">
+      <div class="container">
+
+        <section class="container content-section">
+          <h2 class="section-header">CART</h2>
+          <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+          </div>
+          <div class="cart-items">
+          </div>
+          <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+          </div>
+          <button class="btn btn-primary btn-purchase" type="button">CHECKOUT</button>
+        </section>
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
